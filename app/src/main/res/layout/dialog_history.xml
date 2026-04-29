@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@color/dialogBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:paddingBottom="8dp">
+
+        <Button
+            android:id="@+id/btnHistoryDay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Daily"
+            android:backgroundTint="@color/buttonBackground"
+            android:textColor="@color/buttonText" />
+
+        <Button
+            android:id="@+id/btnHistoryMonth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Month"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:backgroundTint="@color/buttonBackground"
+            android:textColor="@color/buttonText" />
+
+        <Button
+            android:id="@+id/btnHistoryYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Year"
+            android:backgroundTint="@color/buttonBackground"
+            android:textColor="@color/buttonText" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/historyContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#1976D2</color>
+    <color name="colorPrimaryDark">#0D47A1</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="background">#FFFFFF</color>
+    <color name="textPrimary">#000000</color>
+    <color name="textSecondary">#666666</color>
+    <!-- Make button background blue -->
+    <color name="buttonBackground">#2196F3</color>
+    <color name="buttonText">#FFFFFF</color>
+    <color name="dialogBackground">#FFFFFF</color>
+    <!-- Use blue for positive actions and a neutral gray for cancel -->
+    <color name="button_save_color">#2196F3</color>
+    <color name="button_cancel_color">#757575</color>
+</resources>

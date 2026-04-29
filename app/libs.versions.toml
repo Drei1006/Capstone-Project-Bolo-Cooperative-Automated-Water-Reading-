@@ -1,0 +1,69 @@
+plugins {
+    alias(libs.plugins.android.application) apply false
+    alias(libs.plugins.kotlin.android) apply false
+}
+
+android {
+    namespace = "com.bwsc.watermeter"
+    compileSdk = 35
+
+    defaultConfig {
+        applicationId = "com.bwsc.watermeter"
+        minSdk = 21 // Lowered for broader compatibility; adjust if needed
+        targetSdk = 35
+        versionCode = 1
+        versionName = "1.0"
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            isMinifyEnabled = true // Enable for release to optimize size
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+            // Optional: Signing config
+            // signingConfig signingConfigs.release
+        }
+        debug {
+            isMinifyEnabled = false // Disable for debugging
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
+    }
+
+    kotlinOptions {
+        jvmTarget = "11"
+    }
+
+    // Room schema location for migration tracking
+    kotlin {
+        sourceSets.all {
+            kotlin.srcDir("build/generated/source/kapt/debug")
+        }
+    }
+}
+
+dependencies {
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.material)
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.constraintlayout)
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
+    implementation("androidx.room:room-runtime:2.6.1")
+    kapt("androidx.room:room-compiler:2.6.1")
+    implementation("androidx.room:room-ktx:2.6.1")
+    implementation("com.android.volley:volley:1.2.1")
+}
+
+// Apply plugins only where needed
+apply plugin: libs.plugins.android.application
+        apply plugin: libs.plugins.kotlin.android

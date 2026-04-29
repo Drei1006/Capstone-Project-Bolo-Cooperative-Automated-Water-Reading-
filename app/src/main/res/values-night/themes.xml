@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ThesisDraft" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:background">@color/background</item>
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="android:textColorSecondary">@color/textSecondary</item>
+        <item name="buttonStyle">@style/AppButtonStyle</item>
+        <item name="editTextBackground">@drawable/edit_text_background</item>
+        <item name="editTextColor">@color/textPrimary</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerItemStyle</item>
+    </style>
+    <style name="Theme.ThesisDraft" parent="Base.Theme.ThesisDraft" />
+    <style name="AppButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/buttonBackground</item>
+        <item name="android:textColor">@color/buttonText</item>
+    </style>
+
+    <style name="SpinnerItemStyle" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:background">@color/background</item>
+    </style>
+
+    <style name="AppDialogTheme" parent="Theme.MaterialComponents.DayNight.Dialog">
+        <item name="android:background">@color/dialogBackground</item>
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="android:textColorSecondary">@color/textSecondary</item>
+    </style>
+</resources>

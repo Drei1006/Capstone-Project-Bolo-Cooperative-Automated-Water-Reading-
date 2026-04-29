@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">BWSC App</string>
+    <string name="add_street">Add Street</string>
+    <string name="add_street_hint">Enter new street name</string>
+    <string name="street_added">Street added</string>
+    <string name="street_empty">Street name cannot be empty</string>
+    <string name="street_exists">Street already exists</string>
+    <string name="street_too_long">Street name is too long (max 64 chars)</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="enter_customer_id">Enter Customer ID</string>
+    <string name="verify_customer">Verify Customer</string>
+    <string name="skip">Skip</string>
+    <string name="previous_reading_hint">Previous Reading (m³)</string>
+    <string name="current_reading_hint">Current Reading (m³)</string>
+    <string name="remarks_hint">Remarks</string>
+    <string name="submit">Submit</string>
+    <string name="backup">Backup</string>
+    <string name="print_receipt">Print Receipt</string>
+    <string name="notepad">Notepad</string>
+    <string name="search_by_name">Search by Name</string>
+    <string name="customer_list">Customer List</string>
+    <string name="history">History</string>
+    <string name="delete_street">Delete Street</string>
+    <string name="delete_street_confirm">Delete street "%1$s"? This will remove it from the app (does not delete the Google Sheet).</string>
+    <string name="street_deleted">Street deleted</string>
+    <string name="delete_cancel">Cancel</string>
+</resources>
